@@ -35,11 +35,11 @@ export default function TextForm(props) {
         <div className="mb-2">
             <textarea className="form-control" style={{backgroundColor : props.mode === 'light' ? 'white':'#0a1838' , color:props.mode === 'light' ? 'black' : 'White'}}  value={text} onChange={handleOnChange} id="myBox" rows="5" placeholder='Enter text here..'></textarea>
         </div>
-        <button disabled = {text.length === 0} type="button" className="btn btn-primary" onClick={handleUpClick}>Uppercase</button>
-        <button disabled = {text.length === 0} type="button" className="btn btn-primary mx-2" onClick={handleDownClick}>Lowercase</button>
-        <button disabled = {text.length === 0} type="button" className="btn btn-primary mx-2" onClick={removeExtraSpaceClick}>Remove Extra Spaces</button>
-        <button disabled = {text.length === 0} type="button" className="btn btn-primary mx-2" onClick={copyToClipboardClick}>Copy text</button>
-        <button disabled = {text.length === 0} type="button" className="btn btn-primary mx-2" onClick={clearTextClick}>Clear</button>
+        <button disabled = {text.length === 0} type="button" className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>Uppercase</button>
+        <button disabled = {text.length === 0} type="button" className="btn btn-primary mx-1 my-1" onClick={handleDownClick}>Lowercase</button>
+        <button disabled = {text.length === 0} type="button" className="btn btn-primary mx-1 my-1" onClick={removeExtraSpaceClick}>Remove Extra Spaces</button>
+        <button disabled = {text.length === 0} type="button" className="btn btn-primary mx-1 my-1" onClick={copyToClipboardClick}>Copy text</button>
+        <button disabled = {text.length === 0} type="button" className="btn btn-primary mx-1 my-1" onClick={clearTextClick}>Clear</button>
      </div>
      <div className="container my-3" style={{color:props.mode === 'light' ? 'black' : 'White'}}>
         <h3> Text Summary</h3>
